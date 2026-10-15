@@ -1,25 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="main_logo">
-            <div class="logo">
-                
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/style.css">
+        
+        <title>Landing</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="main_logo">
+                <a href="#">
+                    <img src="./images/logo-arch.png" class="logo" alt="logo Archmove">
+                </a>   
+                <button class="burger" id="burger" aria-label="Open Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav header__menu">
+                    <button class="menu__close" id="close-menu" aria-label="Close menu">
+                        &times;
+                    </button>
+                    <a href="#" class="nava">How it works?</a>
+                    <a href="#" class="nava">Design Gallery</a>
+                    <a href="#" class="nava">Architects</a>
+                    <a href="#" class="nava">Articles</a>
+                </div>
             </div>
-            <div class="nav">
-                <a class="nava">How it works?</a>
-                <a class="nava">Design Gallery</a>
-                <a class="nava">Architects</a>
-                <a class="nava">Articles</a>
+            <div class="wrapper header__actions">
+                <a href="#"><img src="./images/images.png" class="find"></a>
+                <a href="#" class="sign_in">Sign In</a>
+                <a href="#" class="sign_upa"><div class="sign_up">Sign Up</div></a>
             </div>
-        </div>
-    </header>
-</body>
+        </header>
+        <main>
+            <section class="hero">
+                <h1>
+                    Build Your <br>
+                    Dream <span class="house">House</span>
+                </h1>
+                <div class="wrapper_hero">
+                    <div class="content_hero">
+                        <p>100% guaranteed build safe,<br>comfortable and transparent with a<br>project management for the best result</p>
+                        <a href="#" style="display: inline-block;"><div class="button_hero">Free Consultation</div></a>
+                    </div>
+                    <img src="./images/hero.png" class="hero_image">
+                </div>
+            </section>
+            <section class="gallery">
+                <div class="title_button">
+                    <h2>Build professional<br>valuable room</h2> 
+                    <div class="wrapper_gallery">
+                        <a><div class="button_back"><img src="./images/button_icon_back.png"></div></a>
+                        <a><div class="button_fd"><img src="./images/button_icon_fd.png"></div></a>
+                    </div>
+                </div>
+                <div class="wrapper_gallery_images">
+                    <img src="./images/img1.png" class="photo">
+                    <img src="./images/img2.png" class="photo">
+                    <img src="./images/img3.png" class="photo">
+                    <img src="./images/img4.png" class="photo">
+                </div>
+            </section>
+            <section class="testimonial">
+                <h2>Sound Too Good<br>To Be True?</h2>
+                <div class="content">
+                    <div class="testimonial_text">
+                        <img src="./images/qq.png" style="width: 57.02px; height: 39.73px;">
+                        <p>“We just wanted to thank you for this<br>fantastic website! We are so grateful for<br>being able to advertise our Petite cabin and<br>receive feedback from people from all over<br>the U.S. and even further.”</p>
+                    </div>
+                    <div style="display: flex; justify-content: end;">
+                        <div class="client">
+                            <p>Adam Morph — CEO Alfatech</p>
+                            <div class="wrapper_gallery">
+                                <a><div class="button_back"><img src="./images/button_icon_back.png"></div></a>
+                                <a><div class="button_fd"><img src="./images/button_icon_fd.png"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="./scripts/script.js"></script>
+    </body>
 </html>
